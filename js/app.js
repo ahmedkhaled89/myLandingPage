@@ -22,6 +22,9 @@
  * Define Global Variables
  * 
 */
+const fragment = document.createDocumentFragment();
+const sections = document.querySelectorAll('section');
+const ul = document.querySelector('ul');
 
 
 /**
