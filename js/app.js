@@ -32,11 +32,10 @@ const ul = document.querySelector('ul');
  * Start Helper Functions
  * 
 */
-//function to creat a link to each section dynamicaly
-const creatLinks = ()=>{
+//function to creat a link to a section
+const creatLinks = (section)=>{
     //const sections = document.querySelectorAll('section');
     console.log('creatLinks Fnction Works!')
-    sections.forEach(section => {
         const li = document.createElement('li');
         const a = document.createElement('a');
         //add the 'menu__link' (in css/styles.css file) class to style the menue links
@@ -48,16 +47,35 @@ const creatLinks = ()=>{
         li.appendChild(a);
         //append links to the fragment 
         fragment.appendChild(li);
-    
-});
-
-
-
-
-    
-
 }
+
+/* Helper Function to add active class to the appeared section 
+and add active class to the corresponding active link
+*/
+const addActiveClass = (section) => {
+        let top = section.getBoundingClientRect().y;
+        const sectionId = section.getAttribute('id');
+        const sectionLink = "#" + sectionId; // this is the href attribute in the 'a' tag
+        //select the section link from the menu with the href attribute 
+        const link = document.querySelector(`[href = '${sectionLink}']`)
+        if (top >=0 && top <=300){ 
+            //add active class to the viewed section
+            section.classList.add('your-active-class');
+            // add 'active-link' class to the corresponding link
+            link.classList.add("active-link");
+        } else {
+            //remove the active class from sections that are not viewed
+            section.classList.remove('your-active-class');
+            //remove active linke class
+            link.classList.remove("active-link");
+
+    
+        }
+    } 
+
+
 creatLinks()
+
 ul.appendChild(fragment);
 
 
