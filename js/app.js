@@ -23,7 +23,7 @@
  * 
 */
 const fragment = document.createDocumentFragment();
-//const sections = document.querySelectorAll('section');
+const sections = document.querySelectorAll('section');
 const ul = document.querySelector('ul');
 
 
@@ -34,7 +34,7 @@ const ul = document.querySelector('ul');
 */
 //function to creat a link to each section dynamicaly
 const creatLinks = ()=>{
-    const sections = document.querySelectorAll('section');
+    //const sections = document.querySelectorAll('section');
     console.log('creatLinks Fnction Works!')
     sections.forEach(section => {
         const li = document.createElement('li');
