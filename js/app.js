@@ -73,13 +73,15 @@ const addActiveClass = (section) => {
         }
     } 
 
+sections.forEach(section => creatLinks(section))
+window.addEventListener('scroll', ()=> {
+    sections.forEach(section => addActiveClass(section))
 
-creatLinks()
 
+})
 ul.appendChild(fragment);
 
-
-
+//sections.forEach(section, creatLinks)
 /**
  * End Helper Functions
  * Begin Main Functions
