@@ -33,6 +33,13 @@ h1 {
     }
 }
 
+/* active-link class*/
+
+.navbar__menu .active-link {
+    background-color: orange;
+}
+
+
 h2 {
     border-bottom: 1px solid #cc1;
     font-family: 'Oxygen', Sans-Serif;
