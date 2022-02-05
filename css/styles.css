@@ -33,13 +33,6 @@ h1 {
     }
 }
 
-/* active-link class*/
-
-.navbar__menu .active-link {
-    background-color: orange;
-}
-
-
 h2 {
     border-bottom: 1px solid #cc1;
     font-family: 'Oxygen', Sans-Serif;
@@ -93,6 +86,19 @@ section {
     background: #333;
     color: #fff;
     transition: ease 0.3s all;
+}
+/* nav menu style for small screens*/
+@media only screen and (max-width: 700px){
+    .navbar__menu li {
+        display: block;
+    }
+
+}
+
+/* active-link class*/
+
+.navbar__menu .active-link {
+    background-color: orange;
 }
 
 /* Header Styles */
@@ -201,8 +207,8 @@ section:nth-of-type(3n + 1) .landing__container::after {
 /* Section Active Styles */
 /* Note: your-active-class class is applied through javascript. You should update the class here and in the index.html to what you set in your javascript file.  */
 section.your-active-class {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+    background-color: rgb(201, 8, 8);
+    /*background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);*/
 }
 
 section.your-active-class .landing__container::before {
