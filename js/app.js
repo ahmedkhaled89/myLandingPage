@@ -81,6 +81,24 @@ window.addEventListener('scroll', ()=> {
 })
 ul.appendChild(fragment);
 
+// Scroll to section on link click
+const scrollToActiveSection = (event) => {
+    //prevent 'scroll' event default action
+    event.preventDefault();
+    //get 'href' attribute of the element(link) to be used to get the corresponding section
+    const sectionId = event.target.getAttribute('href').substr(1);
+    const section = document.querySelector(`#${sectionId}`);
+    //scroll smoothly to the target section
+    section.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    });
+
+
+
+}
+ul.addEventListener('click', scrollToActiveSection);
+
 //sections.forEach(section, creatLinks)
 /**
  * End Helper Functions
