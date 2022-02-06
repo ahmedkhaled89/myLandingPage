@@ -102,6 +102,11 @@ section {
 }
 /* nav menu style for small screens*/
 @media only screen and (max-width: 700px){
+    #navbar__list {
+        position: fixed;
+        left: -100%;
+    }
+
     .navbar__menu li {
         display: block;
     }
