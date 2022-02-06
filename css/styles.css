@@ -121,14 +121,15 @@ section {
     .nav-menu.active {
         left: 0;
     }
-    .nav-item {
+   /* .nav-item {
         margin: 2.5rem 0;
-    }
+    }*/
 
     .hamburger {
         display: block;
         cursor: pointer;
     }
+    
 
     /*display hamburger*/
     .hamburger {

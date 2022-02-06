@@ -37,7 +37,10 @@ const creatLinks = (section)=>{
     //const sections = document.querySelectorAll('section');
     console.log('creatLinks Fnction Works!')
         const li = document.createElement('li');
+        li.classList.add('nav-item')
         const a = document.createElement('a');
+        a.classList.add('nav-link')
+
         //add the 'menu__link' (in css/styles.css file) class to style the menue links
         a.classList.add("menu__link");
         //setting the 'href' property for each link 
@@ -101,18 +104,28 @@ ul.addEventListener('click', scrollToActiveSection);
 
 
 const menuIcon = document.querySelector(".hamburger");
-const activateUL = (e) => {
-    ul.classList.add('active')
+const toggleUL = (e) => {
+    ul.classList.toggle('active')
 }
 
-menuIcon.addEventListener('click', activateUL);
+menuIcon.addEventListener('click', toggleUL);
 
 //get all li in nav-menu
-const links = document.querySelectorAll('.nav-menu li');
-const closeMenu = () => {
-    ul.classList.remove('active');
+/*const links = document.querySelectorAll('li');
+const closeMenu = (e) => {
+    menuIcon.classList.remove('active');
 }
-links.forEach(link,addEventListener('click', closeMenu))
+links.forEach(link => addEventListener('click', closeMenu))
+*/
+
+const links = document.querySelectorAll(".nav-link");
+
+links.forEach(link => link.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    
+    ul.classList.remove("active");
+}
 //sections.forEach(section, creatLinks)
 /**
  * End Helper Functions
