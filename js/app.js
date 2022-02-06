@@ -99,6 +99,13 @@ const scrollToActiveSection = (event) => {
 }
 ul.addEventListener('click', scrollToActiveSection);
 
+
+const menuIcon = document.querySelector(".hamburger");
+const activateUL = (e) => {
+    ul.classList.add('active')
+}
+
+menuIcon.addEventListener('click', activateUL);
 //sections.forEach(section, creatLinks)
 /**
  * End Helper Functions

@@ -102,16 +102,32 @@ section {
 }
 /* nav menu style for small screens*/
 @media only screen and (max-width: 700px){
-    #navbar__list {
+    .nav-menu {
         position: fixed;
         left: -100%;
-        
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
     }
 
     /*active ul style*/
 
-    .activeUL {
+    .nav-menu.active {
         left: 0;
+    }
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
     }
 
     /*display hamburger*/
