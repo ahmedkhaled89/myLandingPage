@@ -106,6 +106,13 @@ const activateUL = (e) => {
 }
 
 menuIcon.addEventListener('click', activateUL);
+
+//get all li in nav-menu
+const links = document.querySelectorAll('.nav-menu li');
+const closeMenu = () => {
+    ul.classList.remove('active');
+}
+links.forEach(link,addEventListener('click', closeMenu))
 //sections.forEach(section, creatLinks)
 /**
  * End Helper Functions
