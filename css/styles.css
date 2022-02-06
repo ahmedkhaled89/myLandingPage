@@ -87,11 +87,25 @@ section {
     color: #fff;
     transition: ease 0.3s all;
 }
+
+.hamburger {
+    display: none;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
 /* nav menu style for small screens*/
 @media only screen and (max-width: 700px){
     .navbar__menu li {
         display: block;
     }
+
 
 }
 
