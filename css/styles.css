@@ -105,6 +105,18 @@ section {
     #navbar__list {
         position: fixed;
         left: -100%;
+        
+    }
+
+    /*active ul style*/
+
+    .activeUL {
+        left: 0;
+    }
+
+    /*display hamburger*/
+    .hamburger {
+        display: block;
     }
 
     .navbar__menu li {
