@@ -1,13 +1,18 @@
 # Landing Page Project
 
 ## Table of Contents
-
+* [Project Description](Project Description) 
 * [Instructions](#instructions)
+* [Technologies](#Technologies)
+* [Usefull Links](#Usfull Links)
 
-## Instructions
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+## Project Description
+This is a simple Landing page project with a nav-menu that is build dynamicaly with javascript. 
 
-To get started, open `js/app.js` and start building out the app's functionality
-
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+## Technologies
+* Javascript
+* HTML
+* CSS
+## Usefull Links
+* Nav Menu https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci
