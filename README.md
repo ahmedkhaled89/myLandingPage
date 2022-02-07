@@ -4,7 +4,7 @@
 * [Project Description](Project Description) 
 * [Instructions](#instructions)
 * [Technologies](#Technologies)
-* [Usefull Links](#Usfull Links)
+* [Usefull Links](#Usfull_Links)
 
 
 ## Project Description
@@ -15,4 +15,4 @@ This is a simple Landing page project with a nav-menu that is build dynamicaly w
 * HTML
 * CSS
 ## Usefull Links
-* Nav Menu https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci
+* Nav Menu : https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci
